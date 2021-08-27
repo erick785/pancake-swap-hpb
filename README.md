@@ -97,6 +97,9 @@ cp .env.development .env
 
 - Update `WBNB` address at `node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js`, `node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js`, `node_modules/@pancakeswap-libs/sdk/dist/sdk.esm.js`
 
+
+- Update `MULTICALL_NETWORKS` address `/PancakeSwap/pancake-swap-hpb/pancake-swap-interface-v1/src/constants/multicall/index.ts`
+
 - VERIFY CHANGES by `Find All` old addresses and replace new ones:
 	+ WBNB:            0xaE8E19eFB41e7b96815649A6a60785e1fbA84C1e
 	+ PancakeFactory:  0xBCfCcbde45cE874adCB698cC183deBcF17952812
@@ -114,6 +117,7 @@ cp .env.development .env
 	
 - Custom menu at `src/components/Menu/config.ts`
 
+
 ### Start and Build Frontend
 
 - Start
@@ -128,19 +132,23 @@ yarn build
 
 ### Deployment
 
-- WBNB:            0x0dE8FCAE8421fc79B29adE9ffF97854a424Cad09
-- PancakeFactory:  0x5Fe5cC0122403f06abE2A75DBba1860Edb762985
-- INIT_CODE_HASH:  0xbb600ba95884f2c2837114fd2f157d00137e0b65b0fe5226523d720e4a4ce539
-- PancakeRouter01: 0x3E2b14680108E8C5C45C3ab5Bc04E01397af14cB
-- PancakeRouter:   0xCc7aDc94F3D80127849D2b41b6439b7CF1eB4Ae0
-- Frontend:        https://pcs.nhancv.com 
+- WBNB:            0x3180356fa8082efEEf9523BE654c162242E4dcC0
+- PancakeFactory:  0xA7B372D22BeC0178ec561a74b87a95DF244E92a6
+- INIT_CODE_HASH:  0x7f9a49918bf8ca6d4561dbce1f8d23f736f37c378e8a942d15ea4adf40d8ca6c
+- PancakeRouter01: 0x07F0a23068F9cEa5F8D16ECE4354Fa4A5b670E36
+- PancakeRouter:   0x953EDBf175792dB1161110543Cc2f4181fD6Dab5
+- Frontend:        http://localhost:3000
+- MULTICALL_NETWORKS 0xE3c149fc3252f9BF09cfb56B33a06A4b274B5d92
 
 **Tokens**
 
-- BAKE Token: 0xb289b361a633A9D2b0B39BAE76BB458d83f58CEC
-- BUSD Token: 0xE0dFffc2E01A7f051069649aD4eb3F518430B6a4
-- ETH Token:  0xE282a15DBad45e3131620C1b8AF85B7330Cb3b4B
-- USDT Token: 0x7afd064DaE94d73ee37d19ff2D264f5A2903bBB0
-- XRP Token:  0x3833B175Af1900b457cf83B839727AF6C9cF0bEe
-- DAI Token:  0x3Cf204795c4995cCf9C1a0B3191F00c01B03C56C
-- CAKE Token: 0xB8F5B50ed77596b5E638359d828000747bb3dd89
+| token | address                                    | hash                                                         |
+| ----- | ------------------------------------------ | ------------------------------------------------------------ |
+| BAKE  | 0x94a42146Fab15a7EC00a8Bd95720cF0baDa65B42 | 0x6098e13955cf0853eb479f802bb4801f892258d8743f48178bd3b49e304d6bc9 |
+| BUSD  | 0x7560AdfEca32ed5EC1b9101dD458e867Aec90cE3 | 0xfba1330074958956f9cff9112f51bb4589df011f3ebac3a9e891627f6f1a7811 |
+| ETH   | 0xc34ad7105eb3B5F6c7A0198A346E26595A142291 | 0x0ceefc7c3d22dc3bc030ad33e62e402315a8aaae57968595d4d57b046ee5160e |
+| USDT  | 0x02e996E902F5Ad8cC5037ECC5DCd552C565B6EBC | 0x95ed10809c17de41f2872708dcf646e43b4720c38293de57674454e893009db8 |
+| XRP   | 0x0eF680193492C1cc0a34a20411bA31eeA3298eeA | 0x45324f79100d845ae410d666ec87cbda3a2b2650dcb3f5dae7d0ca82a99a3cbf |
+| DAI   | 0x9D575ba54c57763d3b1e42957eBFE9D791DeeD39 | 0x5fda7bdadfe57e8b0334b99c7d699a5d2afdf8a2c12c2ee87ac5432cb69c8e7c |
+| CAKE  | 0x4B13a328AFcc7EA26FA97436fB8a7346e6d2A6C6 | 0xc1c54f99aea29f3845c77b7a3f9b6ebfbe9aabb29a8414bacd0d879ddbfa27ed |
+| WBNB  | 0x3180356fa8082efEEf9523BE654c162242E4dcC0 | 0x33c7311e0acd78c0709cbc8f2141d2d168667c7aae1e1b967a44f3a64e748b9b |

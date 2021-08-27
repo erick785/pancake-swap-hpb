@@ -19,6 +19,8 @@ export function useFetchListCallback(): (listUrl: string) => Promise<TokenList> 
       if (!library || chainId !== ChainId.MAINNET) {
         if (NETWORK_CHAIN_ID === ChainId.MAINNET) {
           const networkLibrary = getNetworkLibrary()
+          window.console.log("---",NETWORK_CHAIN_ID,chainId)
+          window.console.log("---",networkLibrary)
           if (networkLibrary) {
             return resolveENSContentHash(ensName, networkLibrary)
           }

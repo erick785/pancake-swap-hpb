@@ -21,7 +21,7 @@
     {
       "name": "Bakery Token",
       "symbol": "BAKE",
-      "address": "0xb289b361a633a9d2b0b39bae76bb458d83f58cec",
+      "address": "0x94a42146Fab15a7EC00a8Bd95720cF0baDa65B42",
       "chainId": 269,
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/erick785/pancake-swap-hpb/master/pancake-swap-interface-v1/public/images/coins/0xe02df9e3e622debdd69fb838bb799e3f168902c5.png"

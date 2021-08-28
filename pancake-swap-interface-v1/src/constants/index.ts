@@ -13,6 +13,7 @@ export const DAI = new Token(ChainId.BSCTESTNET, '0x9D575ba54c57763d3b1e42957eBF
 export const BUSD = new Token(ChainId.BSCTESTNET, '0x7560AdfEca32ed5EC1b9101dD458e867Aec90cE3', 18, 'BUSD', 'Binance USD')
 export const USDT = new Token(ChainId.BSCTESTNET, '0x02e996E902F5Ad8cC5037ECC5DCd552C565B6EBC', 18, 'USDT', 'Tether USD')
 export const ETH = new Token(ChainId.BSCTESTNET, '0xc34ad7105eb3B5F6c7A0198A346E26595A142291', 18, 'ETH', 'Binance-Peg Ethereum Token')
+export const BAKE = new Token(ChainId.BSCTESTNET, '0x94a42146Fab15a7EC00a8Bd95720cF0baDa65B42', 18, 'BAKE', 'BAKE Token')
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
@@ -22,7 +23,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], DAI, BUSD, USDT, ETH],
+  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], DAI, BUSD, USDT, ETH, BAKE],
 }
 
 /**

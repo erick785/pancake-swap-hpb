@@ -190,11 +190,20 @@ REACT_APP_GTAG = "GTM-PXLD3XW"
 - Update `WBNB` address at `node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.development.js`, `node_modules/@pancakeswap-libs/sdk/dist/sdk.cjs.production.min.js`, `node_modules/@pancakeswap-libs/sdk/dist/sdk.esm.js`
 
 
-更新所有 `MULTICALL_NETWORKS` 地址，你用测试网的就修改测试网，主网就修改主网的
+更新所有 `MULTICALL_NETWORKS` 地址，修改测试网的地址
 
 - Update `MULTICALL_NETWORKS` address `pancake-swap-interface-v1/src/constants/multicall/index.ts`
 
-更新所有`token`的地址
+更新所有`token`的地址在`src/constants/index.ts`，并且除了这里
+```js
+const WETH_ONLY: ChainTokenList = {
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
+  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
+}
+
+```
+把`ChainId.MAINNET`换成`ChainId.BSCTESTNET`
+
 
 ```js
 
